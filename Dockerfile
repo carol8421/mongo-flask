@@ -1,10 +1,12 @@
 FROM python:3.4-slim
 
-MAINTAINER Nicolas Allemand <contact@nicolasallemand.com>
-
 RUN apt-get update
 RUN apt-get -y install nginx supervisor
 RUN pip install --no-cache-dir gunicorn Flask
+
+RUN apt-get install -y python-pip
+RUN apt-get install -y mongodb-clients
+RUN pip install pymongo
 
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /usr/src/app/static

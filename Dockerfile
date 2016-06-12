@@ -1,4 +1,4 @@
-FROM python:3.4-slim
+FROM python:slim
 
 RUN apt-get update
 RUN apt-get -y install nginx supervisor

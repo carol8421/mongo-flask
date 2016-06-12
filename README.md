@@ -1,6 +1,6 @@
 # Flask Docker image
 
-Flask Docker image powered by Python 3.4, with nginx and gunicorn and the MongoDB driver. It is
+Flask Docker image powered by Python (latest available from official python image), with nginx and gunicorn and the MongoDB driver. It is
 aimed at a production use.
 
 # Project quickstart

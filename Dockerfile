@@ -1,7 +1,7 @@
 FROM python:slim
 
 RUN apt-get update
-RUN apt-get -y install nginx supervisor
+RUN apt-get -y install nginx supervisor git
 RUN pip install --no-cache-dir gunicorn Flask
 
 RUN apt-get install -y python-pip

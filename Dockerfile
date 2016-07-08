@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir gunicorn Flask
 RUN apt-get install -y python-pip
 RUN apt-get install -y mongodb-clients
 RUN pip install pymongo
-
+RUN apt-get install -y curl
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /usr/src/app/static
 WORKDIR /usr/src/app

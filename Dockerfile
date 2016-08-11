@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:2-slim
 
 RUN apt-get update
 RUN apt-get -y install nginx supervisor git
